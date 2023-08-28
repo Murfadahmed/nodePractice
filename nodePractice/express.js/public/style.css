@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    /* background-color: rgb(22, 21, 21); */
+    background-image: url(https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg);
+    width: 100%;
+    height: 100vh;
+    /* border: 10px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.overlay{
+    /* width: 100%;
+    height: 100vh; */
+    background-color: rgba(73, 166, 235, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.hidden{
+    z-index: 01;
+    display: none;
+}
+.modal {
+    width: 29rem;
+    height: 18rem;
+    /* background-color: rgba(121, 242, 248, 0.9); */
+    background-image: linear-gradient(55deg,red,rgba(121, 242, 248, 0.9));
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.5rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.modaljs{
+    display: none;
+    width: 29rem;
+/* position: absolute; */
+    /* z-index: 1;  */
+} 
+.backModal {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    width: 49rem;
+    height: 18rem;
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 1.2rem;
+    /* border: 1px solid skyblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+    z-index: 01;
+
+}
+ /* .backModaljs{
+ display: none;
+}  */
+
+.click {
+    padding: 0.3rem;
+    background-color: rgb(128, 187, 243);
+    border-radius: 10px;
+    margin-top: 1.2rem;
+    line-height: 20px;
+    letter-spacing: 8px;
+    border: none;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.click:hover {
+
+    background-color: transparent;
+    color: rgb(8, 7, 7);
+    /* padding: 0.5rem; */
+    /* width: 9rem; */
+    margin-top: 1.3rem;
+    border: 1px solid;
+}
+
+.close-modal{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+.close-modal:hover{
+    font-size: 40px;
+    
+}

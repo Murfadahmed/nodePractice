@@ -1,0 +1,14 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "main": "index.npjs",
+  "scripts": {
+    "start": "nodemon index.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
